@@ -1,0 +1,15 @@
+﻿<Application x:Class="PrimaryInterface0._3.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PrimaryInterface0._3"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Style\CTreeView.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Style\CGrid.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Style\CDataGrid.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="PrimaryInterface0._3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrimaryInterface0._3"
+        xmlns:Custom="clr-namespace:PrimaryInterface0._3.Core"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <WrapPanel Grid.Column="0" Width="160" Name="WrapPanel">
+            <Button x:Name="button" Click="button_Click" Content="Button" Width="74"/>
+        </WrapPanel>
+        <Custom:CDataGrid  Style="{StaticResource DataGridStyle1}" Grid.Column="1" x:Name="testdatagrid" SelectionUnit="CellOrRowHeader" 
+                           SelectionMode="Extended" EnableColumnVirtualization="False" EnableRowVirtualization="False"
+                           CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserResizeRows="False" Title="abc" RowHeaderWidth="30"
+                           LoadingRow="testdatagrid_LoadingRow" ColumnHeaderHeight="80" >
+        </Custom:CDataGrid>
+    </Grid>
+</Window>
